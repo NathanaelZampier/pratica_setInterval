@@ -1,0 +1,13 @@
+const botao = document.querySelector(".Enviar");
+
+botao.addEventListener("click", function () {
+
+    console.log("Enviado!");
+
+    setTimeout(function () {
+
+        console.log("Mensagem removida");
+
+    }, 3000);
+
+});
