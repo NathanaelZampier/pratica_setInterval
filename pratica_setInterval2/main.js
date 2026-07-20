@@ -381,24 +381,157 @@
 
 // processar(dados)
 
-function executar(funcao) {
+// function executar(funcao) {
 
+// }
+
+// function falar(nome) {
+//     console.log(nome)
+// }
+
+// nome = 'pedro'
+
+// executar(falar)
+
+// function calcular(a,b, callback) [
+//     let resultado = a + b
+//     callback(resultado)
+// ]
+
+
+// function fazerPizza(sabor, callback) {
+//     console.log(`fazendo pizza sabor ${sabor}...`);
+//     setTimeout(function(){
+//         callback()
+//     },1500)
+// }
+
+// function pizzaPronta() {
+//     console.log('a pizza está pronta, bom apeitite')
+// }
+
+// fazerPizza('calabresa', pizzaPronta)
+
+
+// function enviarEmail(destinatario, callback) {
+//     console.log('enviando seu email para ' + destinatario) 
+//     setTimeout(function(){
+//         callback()
+//     },2000)
+// }
+
+// function feedbackEmail() {
+//     console.log('Email enviado com sucesso')
+// }
+
+// enviarEmail('joão', feedbackEmail)
+
+// function baixarArquivo(nome, callback) {
+//     console.log('Baixando relatório.pdf...')
+//     setTimeout(function(){
+//         callback()
+//     },3000)
+// }
+
+// function feedbackDowload() {
+//     console.log('Download concluído')
+// }
+
+// baixarArquivo('roberto', feedbackDowload)
+
+
+// function prepararPedido(produto, callback) {
+//     console.log('preparando ' + produto + ' ...')
+//     setTimeout(function(){
+//         callback(produto)
+//     },2000)
+// }
+
+// function retornoPedido(produto) {
+//     console.log('pedido pronto: ' + produto)
+// }
+
+// prepararPedido('hotdog', retornoPedido)
+
+
+
+
+// function somar(a,b, callback) {
+//     let op = a + b
+//     callback(op)
+// }
+
+
+// function retornoSomar(resultado) {
+//     console.log('resultado: ' + resultado)
+// }
+
+// somar(10,20, retornoSomar)
+
+
+// let pratoServido = 'macarrão'
+
+// function cozinhar(callback){
+//     setTimeout(function(){
+//         callback()
+//     }, 2000)
+// }
+
+
+// function retornoCozinha() {
+//     console.log('prato servido: ' + pratoServido )
+// }
+
+
+// cozinhar(retornoCozinha)
+
+// function imprimir(nome) {
+//     console.log(nome)
+// }
+
+// function executar(callback) {
+//     console.log(nome)
+// }
+
+// executar(imprimir('joao'))
+
+
+// function somar(a,b, callback) {
+//     op = a + b
+//     callback(op)
+// }
+
+// function mostrar(resultado) {
+//     console.log('resultado é : ' + resultado)
+// }
+
+// somar(20, 20, mostrar)
+
+// function cozinhar(callback) {
+//     console.log('preparando')
+//     setTimeout(function(){
+//         callback('pizza')
+//     },2000)
+// }
+
+// function retornoCozinhar(produto) {
+//     console.log('servindo ' + produto)
+// }
+
+// cozinhar(retornoCozinhar)
+
+function buscar(callback) {
+    setTimeout(function(){
+        callback({
+            nome: 'joao',
+            idade: 18
+        })
+    },2000)
 }
 
-function falar(nome) {
-    console.log(nome)
+function retornoBuscar(usuario) {
+    console.log(usuario.nome)
+    console.log(usuario.idade)
 }
 
-nome = 'pedro'
-
-executar(falar)
-
-function calcular(a,b, callback) [
-    let resultado = a + b
-    callback(resultado)
-]
-
-
-
-
-
+buscar(retornoBuscar)
